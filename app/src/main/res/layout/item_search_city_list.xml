@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_city_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/icon_item_city"
+        android:drawableRight="@mipmap/icon_open"
+        android:drawablePadding="@dimen/dp_8"
+        android:foreground="@drawable/bg_white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_12"
+        android:text="深圳"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:background="#EEEEEE" />
+</LinearLayout>

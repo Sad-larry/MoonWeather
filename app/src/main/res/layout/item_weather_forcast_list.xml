@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_forecast"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="@drawable/bg_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/sp_12">
+        <!-- 日期 -->
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1234"
+            android:textColor="#FFF"
+            android:textSize="@dimen/sp_14" />
+        <!-- 天气描述 文字 隐藏 -->
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+        <!-- 天气描述 图标 -->
+        <ImageView
+            android:id="@+id/iv_weather_state"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/icon_100" />
+        <!-- 最低温、最高温 -->
+        <TextView
+            android:id="@+id/tv_low_and_height"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="#FFF"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+</LinearLayout>
